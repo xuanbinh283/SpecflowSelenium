@@ -1,0 +1,601 @@
+---
+- name: I click the Log in button
+  uid: 3fa0b0b5-4c06-4872-a6f8-7f8a9e230858
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I click the Search Engines option
+  uid: 20e62b24-ad29-4fd4-834e-86ae639e7cf1
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I go to the VSMC site
+  uid: 24a038a2-debf-4b6d-b622-b9d78a2788b9
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see two disabled Delete Selected Button
+  uid: 05aac400-df24-467a-982f-488f3a48cad8
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see two enabled Add Search Engine button
+  uid: 6364c2e6-74b0-41fe-a259-5f6b97eee246
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see a search box
+  uid: a3855b55-666b-4443-9101-5c90d5f96985
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see search engine label titles of Name, Key, Documents, Last Updated,
+    By, Edit, and Delete headings
+  uid: 563dc1ad-939f-44fd-aa8b-80a7417b8e87
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see my search engine
+  uid: 5403db73-1ca4-4091-b817-d59d031db39b
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see a default display per page of 20
+  uid: 04a132a3-d74c-4096-b742-44fd638dd2f0
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I count the number of search engines on the page
+  uid: 94cef3c8-d456-430e-982f-417e4bc706a3
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I verify a label of Displaying items 1 - <<count>> of <<total>> is displayed
+    on the page
+  uid: f54ad19c-52c8-46f1-9951-adb36adb9db6
+  parameters:
+  - name: count
+  - name: total
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I verify page "page_number" is selected
+  uid: c61553b6-5f55-43d3-8100-66fc483d2466
+  parameters:
+  - name: page_number
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I search for "the" search engine by Name
+  uid: 4d6702b2-8e21-45f8-b4ee-a9d0ed0ba56a
+  parameters:
+  - name: the
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I verify that only search engines that match the search text by Name appear
+  uid: 4e3298de-3b8b-4e00-9d08-9b2a3f7aecd9
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I search for my search engine by Key
+  uid: ad740f37-2359-40c1-9f76-610a20507fdc
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should not see my search engine
+  uid: 46eef87c-00e4-4a08-a147-bff50556bb8e
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I select "the" search engine
+  uid: 7eed163f-217c-4a62-849e-d6b15c816ece
+  parameters:
+  - name: the
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I verify my search engine is checked
+  uid: a48d4c0d-1970-481f-b2a4-47a5276b5a05
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I unselect my search engine
+  uid: d745df3c-55b9-4a49-965f-4fac2707f803
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I verify my search engine is unchecked
+  uid: 4513abac-e348-494b-96bb-414d769cb881
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I select the main checkbox for search engines
+  uid: 90cb1156-5993-4920-86e5-fe24f363cef8
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I verify that all search engines are selected
+  uid: 2cd9a269-876e-4b60-bfc9-3ae415ca67c0
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I click on the Name column header
+  uid: 6f91bbe9-0f85-42a8-8027-6a50f39c951f
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I verify that the search engines are sorted ascendingly by name
+  uid: a9c8fee7-5f9f-4ace-a779-6153a44e458c
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I verify that the search engines are sorted descendingly by name
+  uid: c7d86931-c410-4207-bbbf-b24c14cff0b4
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I click on the Key column header
+  uid: 771efc1e-40af-464c-ba17-5ab5a40b565b
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I verify that the search engines are sorted ascendingly by key
+  uid: 35e5d92e-3c58-425a-8202-3b8f613a9084
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I verify that the search engines are sorted descendingly by key
+  uid: 5e892978-f91c-4010-93dc-5a20c14851ab
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I click on the Documents column header
+  uid: 66c54c83-beb7-4d65-8c7d-7cf4e39d6fb1
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I verify that the search engines are sorted ascendingly by documents
+  uid: 372a9a6f-9993-4934-a4da-53fa7b365b23
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I verify that the search engines are sorted descendingly by documents
+  uid: 2e33bbfe-52e2-4660-b778-5856a9157131
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I click on the Last Updated column header
+  uid: 8a5d7362-1a29-43b2-8118-714762045392
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I verify that the search engines are sorted ascendingly by Last Updated
+  uid: d8d9c85b-295a-446a-b871-5f9958246a58
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I verify that the search engines are sorted descendingly by Last Updated
+  uid: b48d9fb0-bfe2-4d08-bc41-0b23d20957ca
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I click on the By column header
+  uid: c9731a7f-e4be-44b8-9ff8-cc28bf64c729
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should not see the caret symbol next to the By column header
+  uid: 5dd0adf7-d584-42c4-9da5-3dd3ec6c9390
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I refresh the page
+  uid: e8f26a50-3d6f-49b3-ba9e-a5cd8b6bcd5f
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I log out of the system
+  uid: 39004964-7f72-4136-a476-aa416d95a67b
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see the VSMC login page
+  uid: 9003423c-0f28-40c5-823f-cd26d12738ad
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see the toaster confirmation that the login has failed
+  uid: eb49bf72-458e-478a-836d-3aa20e404da8
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see the Search Engines page
+  uid: 421f5697-b3d0-4d53-8453-c7787bd7ac85
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should not see the Search Engines page
+  uid: 014e4b14-3a41-4379-bc58-38206a0620f5
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I press tab on the email address field
+  uid: e55593d2-bb19-4f6a-ac0e-c435015f2365
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see the Email is required message
+  uid: f3b46af4-3375-477c-aa5e-f65bae3ad5a6
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see the Password is required message
+  uid: 6345456d-b98e-4d8d-84e9-aaa95290d1c9
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: The Log in button should be disabled
+  uid: 36e3ef81-1471-4ec5-b1ac-4962beaab61c
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: The Log in button should be enabled
+  uid: 74bb1701-095e-475a-8021-1b03d3c006a4
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I clear the email address field
+  uid: 653a5f48-3626-49d6-b0c5-1d0b4e61d64a
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I clear the password field
+  uid: 56354919-cfae-4b89-a2a4-dc311e5392e4
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I unsuccessfully login as a SYSADMIN
+  uid: c931c041-1cfd-44c9-8962-84551ea5b194
+  parameters: []
+  body_hash: cc7e202f96fec67338683db02dc824d1
+- name: I successfully login as a SYSADMIN
+  uid: 7118ec04-4190-49fe-af12-3b435c6a656f
+  parameters: []
+  body_hash: 0acce3436c9421840143d3548e7a1e49
+- name: I should see the message "the_screen_text"
+  uid: f1b888af-f3aa-47db-b7de-1e3f94898352
+  parameters:
+  - name: the_screen_text
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I click the Add Search Engine button
+  uid: b73980cc-6504-4587-b957-652b1b89af6e
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see the Add Search Engine details screen
+  uid: cb55bb2f-f19a-4910-b25c-1a520e23ad38
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I enter a random automated search engine name
+  uid: 1e8ba985-f291-4e43-9868-84d723b6929b
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I verify that the Key Prefix is set to "key"
+  uid: 4dd42e28-f33a-4c69-b7de-76cb46bd4096
+  parameters:
+  - name: key
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I enter a description of "my_description"
+  uid: cd074e04-6148-4119-b191-01146f8e86ec
+  parameters:
+  - name: my_description
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I click the Save button on the search engine details page
+  uid: ab7bf6de-1f39-4141-99ee-e0c35bf5a75b
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see the Add Successful toaster confirmation
+  uid: e69a7ed0-7bcd-4c12-81b6-25d1d67fd1af
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see "the" search engine in the list of search engines
+  uid: 92d7bd0b-9712-433a-80c2-9e2a646405ec
+  parameters:
+  - name: the
+  body_hash: d3eda3e196543f8b4150f6aba9be0c9c
+- name: I should see "my" search engine name
+  uid: 46833567-5762-4e8f-8188-2d467843d348
+  parameters:
+  - name: my
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see the key prefixed by STANDARD_KEY
+  uid: 7f199b76-2f6d-4e04-b6f1-354fafa8f4eb
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see a document count of 0
+  uid: 11b5150a-d86e-4936-a197-03429ec3932d
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see a Last Updated timestamp of current time
+  uid: 22a58280-27b1-4708-a51c-493a92ce8ffe
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see a By field populated with "user"
+  uid: 707ad1f6-f346-4898-86a5-111760336573
+  parameters:
+  - name: user
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see the Edit icon for "my" search engine
+  uid: 844df755-e608-4e61-b72e-10cb1e4cb374
+  parameters:
+  - name: my
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see the Delete icon for "my" search engine
+  uid: a5c47a4f-b210-4140-aec1-04a530608cb4
+  parameters:
+  - name: my
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: The key should contain "char_count" characters
+  uid: ab9f1591-fbc5-4db6-a14b-97bf8654c127
+  parameters:
+  - name: char_count
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see the search result of "p1"
+  uid: ee18a3e7-64e7-4a12-a4cd-396c23f4f6c1
+  parameters:
+  - name: p1
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I clear the search engine box
+  uid: 20a80360-c12d-4a60-99a5-f8f337a5b605
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see Display 1-count of total on the page
+  uid: 5467d1c9-6302-44d1-bc66-85ecbbe2e4f9
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I click the trash can associated with my search engine
+  uid: c881602d-3573-421a-b786-59375104d275
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see the Delete Confirmation modal for "identifier" search engine
+    s
+  uid: 0bbce81b-b3a4-4f0e-ad55-68e11bd78161
+  parameters:
+  - name: identifier
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I click Yes on the Delete Confirmation modal
+  uid: 8cd5481f-1c57-483c-b9d1-4309d5ea9fd9
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see Delete toaster confirmation that "number" search engines have
+    been deleted
+  uid: cef7b3d0-2225-46f2-b263-e402f9f6800a
+  parameters:
+  - name: number
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should not see "the" search engine in the list of search engines
+  uid: 33111777-7637-41b0-857c-69d66f558c2a
+  parameters:
+  - name: the
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I click No on the Delete Confirmation modal
+  uid: fe2a34ae-fcb7-4473-814b-216855097653
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I add "the" search engine if it does not already exist
+  uid: a464da6d-10d2-4b07-adb7-1281f518cd47
+  parameters:
+  - name: the
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I click the Admin drop-down
+  uid: db2730b7-587e-4c08-a9e4-36da27e0c1ad
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I select the Users entry in the Admin drop-down
+  uid: fe939923-6586-4a0d-b9f3-9c93c9d5d73a
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see the Users main page
+  uid: d53e121c-2d38-47f6-98a1-ed010aa79bd3
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I click the Add User button
+  uid: 77179ad8-9109-48c5-b00b-5dcf34d00ed8
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I enter my user's first name
+  uid: 5ced83cc-c650-4d67-bb94-1164c5362630
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I enter my user's last name
+  uid: 4514f3e9-06cc-4267-ae59-7b7763c1dc41
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I enter my user's email
+  uid: 99ee46c9-7318-4ddc-ba2d-fb74bf0b6779
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I enter my user's password in the Password field
+  uid: ce4df231-5a1a-484c-9282-c2a94c24cb64
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I enter my user's password in the Confirm Password field
+  uid: d73338bd-6657-47c2-b240-67aa651c4a89
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see the Active checkbox is already checked
+  uid: e1cd990d-f564-4481-9977-3f517597aba5
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I check the Super User checkbox
+  uid: d43a0708-0525-45bb-ba6d-95cd8241f3b7
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I click the Add button on the Add User details page
+  uid: 6f98876f-c1db-4a5b-932a-fda583590cf9
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I search for my user by their email address
+  uid: 480e5937-8643-4632-8c88-b6873551b767
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see my user in the list of users
+  uid: c09ffd29-b76a-4a9d-bbe7-b71e3f86f2ca
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: The Full Name field should have my user lastname, firstname
+  uid: 0ed4ab26-0fc6-4adc-b968-c504724285fc
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: The Email field should be my user's email
+  uid: d491b827-6d64-47e0-a1ed-7eaad6b31c29
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: The Super User field should be set to Yes
+  uid: 8fff3a95-d09e-41bd-a4eb-a7b9387fb825
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: The Status field should be set to Active
+  uid: 6dc3e0ce-647f-4983-9e06-f8b4b6d9ee26
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: The By field should be populated with SYSADMIN
+  uid: bb8e98ae-a877-4dfe-8fad-7ac767435652
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see the edit icon for the user
+  uid: 9bc64949-0316-4a50-aaf9-eb07de338c44
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I click the Search drop-down
+  uid: 6109f14c-5bf6-4ade-af8b-91dfdca188c5
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I select the Search Engines entry in the Search drop-down
+  uid: 2add7a05-9d68-4fb1-a1d1-492acac70e22
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I click the BACK button on the browser
+  uid: 8b49a0a0-bb73-468e-a931-bf1d96330d57
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I click the FORWARD button on the browser
+  uid: '088889ab-7f31-4f91-a96b-290d9950c13b'
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: The Name field should be set to my search engine name on search engine "page"
+    page
+  uid: e89cca16-a9fb-4db3-8310-042cec379486
+  parameters:
+  - name: page
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: The Key field has my search engine key on the search engine "type" page
+  uid: 71c773e7-7e85-4e50-9bef-e9010848a9a0
+  parameters:
+  - name: type
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: The Documents field should be set to "doc_count"
+  uid: b6597b34-ac16-4c2f-a1fa-ddac88128a4b
+  parameters:
+  - name: doc_count
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see the Trash Can icon for the search engine
+  uid: c6470353-a41c-466f-8a11-cd37ed705c3a
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see the Delete Selected button on the search engines page disabled
+  uid: 14855c4d-3ff9-4e8d-9b5e-49cc95488567
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I click the Delete Selected button on the search engine page
+  uid: e102d278-9306-49fb-9573-a743465a43b6
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should not see the Delete toaster confirmation
+  uid: d7e5b1fe-3458-4c0d-bc80-869b91ee4207
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I enter an email address "email"
+  uid: debf15b7-d972-4d71-9fb7-8d8073af258e
+  parameters:
+  - name: email
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I enter a password "password"
+  uid: a6b8ba73-adff-4e1a-8111-0f3de5a6cedf
+  parameters:
+  - name: password
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see the user full name is "fullname"
+  uid: 53d0cf11-fcd0-4208-9fc8-022b8d76e7ed
+  parameters:
+  - name: fullname
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I enter a sysadmin email address
+  uid: 9e8e2d6b-bcae-4c51-8e7e-90e17f3e08bf
+  parameters: []
+  body_hash: 6a849f72b7abcf89540ecfd3d6d8c0de
+- name: I enter a sysadmin password
+  uid: 16c9b34a-dc87-429c-98ea-58ecafac5529
+  parameters: []
+  body_hash: 2c83b9ce7e4cc7c642c8fab6ae7d284e
+- name: I enter a bad password
+  uid: c54cb68c-5981-4e10-9109-0d6fc830bb73
+  parameters: []
+  body_hash: 495af2d734f3cd458cd1defa9d45f4e6
+- name: I enter a super user email
+  uid: 543e2c7d-2988-437b-ac8f-5d6a3a13f746
+  parameters: []
+  body_hash: 640386c041de4bbe35e33cca16ade858
+- name: I enter a super user password
+  uid: d8d14e89-a2a3-4050-97b3-1ebff3bf8dad
+  parameters: []
+  body_hash: ef45dc87933d57c7cdb83cdb15dbf27e
+- name: I enter a bad email address
+  uid: 9656ecad-f7df-4bcc-92a8-b45a02987b8d
+  parameters: []
+  body_hash: 1f2a6e4d6aaf16986a5f9e547fbec21e
+- name: I enter a short password
+  uid: 54bd4f66-2c83-4320-8c32-75322af3ef2e
+  parameters: []
+  body_hash: 3ec6e231b75db81a4e2b98b72f40c3c5
+- name: I select all search engines
+  uid: 1c5ceec8-2729-41d1-b38e-1559d1d91096
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I verify all search engines are selected on the current page
+  uid: fe7370e1-9f0e-4c09-987b-45cdee1d1039
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I unselect all search engines
+  uid: 1cfd7eea-57fb-473a-8081-af18158de1ca
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: i verify all search engines are unselected on the current page
+  uid: 6ed22ba6-851b-4a6f-8cab-c94a4048a2bb
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I close all web browsers
+  uid: 9bcc5fde-fc56-4656-bbe9-904b1e8d0325
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I click on the edit icon of "p1" search engine
+  uid: 648446f5-61a9-4084-9faa-b2bedc3c59f4
+  parameters:
+  - name: p1
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: The Description field should be set to "the_description"
+  uid: 779a98bc-a9b9-4188-aab7-4b62bc6cf591
+  parameters:
+  - name: the_description
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I click on the "tab_name" tab on the search engine details page
+  uid: dd122aa1-e4f0-4886-ad10-ae0c3fcf069f
+  parameters:
+  - name: tab_name
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: The Secret field should consist of "number" characters
+  uid: bb634673-a03e-46aa-80b1-6a1596b94962
+  parameters:
+  - name: number
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I should see the message "the_msg" on the Search Features tab on the search
+    engine details page
+  uid: 11d0f8d7-96ad-4a3f-b32c-3b729802b6b5
+  parameters:
+  - name: the_msg
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I successfully login as my user
+  uid: 8ef809a8-3665-40ca-92f6-1c3b08e4c714
+  parameters: []
+  body_hash: 4437aadd6271ba6e3c6dd8fe09b9aa13
+- name: I enter my user email address
+  uid: 5ef67da9-4e84-4c9d-9b1d-107fca289ba5
+  parameters: []
+  body_hash: 9c0add2beb11b68554ceba016729ab4c
+- name: I enter my user password
+  uid: a75446ca-319d-4b08-ad67-6618c9214d70
+  parameters: []
+  body_hash: d6f935334b7c2e49742f154aab3482be
+- name: I add "the" user if they do not already exist
+  uid: 9089e682-6823-4035-b3e0-75b1b052e7da
+  parameters:
+  - name: the
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I click on the edit icon of "the" user
+  uid: b65e6b49-dfa6-4b28-9112-a1c2e71e6633
+  parameters:
+  - name: the
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: The First Name field should be set to "my_users_first_name" on the users "details"
+    page
+  uid: f70d4055-7c1a-4748-af9c-3a415c9cbf96
+  parameters:
+  - name: my_users_first_name
+  - name: details
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: The First Name field should be set to "first_name" on the user "type" page
+  uid: 2b143f9f-8fcb-4513-bc04-be2e8a01122c
+  parameters:
+  - name: first_name
+  - name: type
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: The Last Name field should be set to "last_name" on the user "type" page
+  uid: f50829b8-5b00-4603-87a9-d2282cad0c2b
+  parameters:
+  - name: last_name
+  - name: type
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: The Email address field should be set to "email_address" on the user "type"
+    page
+  uid: 533b8c54-f794-4422-8b9f-58958716e25f
+  parameters:
+  - name: email_address
+  - name: type
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
