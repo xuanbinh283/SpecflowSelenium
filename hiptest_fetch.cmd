@@ -1,0 +1,1 @@
+hiptest-publisher --config=hiptest-publisher.conf --without=actionwords --test-run-id=226958
