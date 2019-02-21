@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using MSTestProject.Core;
 using MSTestProject.Utils;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -10,16 +11,14 @@ namespace Example {
 
     public class Actionwords {
 
-        private readonly ChromeDriver Driver;
+        private readonly IWebDriver _driver;
         public Actionwords()
         {
-            Driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
-            //setup implicit wait
-            Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
-            Driver.Manage().Window.Maximize();
+            _driver = Driver.Browser;
+            _driver.Manage().Window.Maximize();
         }
         public void IClickTheLogInButton() {
-            Driver.FindElement(By.CssSelector("button[type=submit]")).Click();
+            _driver.FindElement(By.CssSelector("button[type=submit]")).Click();
         }
 
         public void IClickTheSearchEnginesOption() {
@@ -29,7 +28,7 @@ namespace Example {
         public void IGoToTheVSMCSite() {
             // get url from variable
             var url = Variable.GetValue("p_vsmc_url");
-            Driver.Navigate().GoToUrl(url);
+            _driver.Navigate().GoToUrl(url);
         }
 
         public void IShouldSeeTwoDisabledDeleteSelectedButton() {
@@ -173,11 +172,11 @@ namespace Example {
             //var wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
             //var element = wait.Until<IWebElement>(d => d.FindElement(By.CssSelector(".form-signin")));
 
-            Driver.FindElement(By.CssSelector(".nav-link.btn")).Click();
+            _driver.FindElement(By.CssSelector(".nav-link.btn")).Click();
         }
 
         public void IShouldSeeTheVSMCLoginPage() {
-            var element = Driver.FindElement(By.CssSelector(".form-signin"));
+            var element = _driver.FindElement(By.CssSelector(".form-signin"));
             Assert.IsNotNull(element);
         }
 
@@ -488,12 +487,12 @@ namespace Example {
 
         public void IEnterAnEmailAddressEmail(string email) {
             var _email = Variable.GetValue(email);
-            Driver.FindElement(By.CssSelector("#inputEmail")).SendKeys(_email);
+            _driver.FindElement(By.CssSelector("#inputEmail")).SendKeys(_email);
         }
 
         public void IEnterAPasswordPassword(string password) {
             var _pass = Variable.GetValue(password);
-            Driver.FindElement(By.CssSelector("#inputPassword")).SendKeys(_pass);
+            _driver.FindElement(By.CssSelector("#inputPassword")).SendKeys(_pass);
         }
 
         public void IShouldSeeTheUserFullNameIsFullname(string fullname) {
