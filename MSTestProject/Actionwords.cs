@@ -1,9 +1,25 @@
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using MSTestProject.Utils;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using System;
+using System.IO;
+using System.Reflection;
+
 namespace Example {
 
     public class Actionwords {
 
+        private readonly ChromeDriver Driver;
+        public Actionwords()
+        {
+            Driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
+            //setup implicit wait
+            Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
+            Driver.Manage().Window.Maximize();
+        }
         public void IClickTheLogInButton() {
-
+            Driver.FindElement(By.CssSelector("button[type=submit]")).Click();
         }
 
         public void IClickTheSearchEnginesOption() {
@@ -11,7 +27,9 @@ namespace Example {
         }
 
         public void IGoToTheVSMCSite() {
-
+            // get url from variable
+            var url = Variable.GetValue("p_vsmc_url");
+            Driver.Navigate().GoToUrl(url);
         }
 
         public void IShouldSeeTwoDisabledDeleteSelectedButton() {
@@ -151,11 +169,16 @@ namespace Example {
         }
 
         public void ILogOutOfTheSystem() {
+            //since we use 30s for implicit wait, we don't need this explicit wait if we don't want more
+            //var wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
+            //var element = wait.Until<IWebElement>(d => d.FindElement(By.CssSelector(".form-signin")));
 
+            Driver.FindElement(By.CssSelector(".nav-link.btn")).Click();
         }
 
         public void IShouldSeeTheVSMCLoginPage() {
-
+            var element = Driver.FindElement(By.CssSelector(".form-signin"));
+            Assert.IsNotNull(element);
         }
 
         public void IShouldSeeTheToasterConfirmationThatTheLoginHasFailed() {
@@ -464,11 +487,13 @@ namespace Example {
         }
 
         public void IEnterAnEmailAddressEmail(string email) {
-
+            var _email = Variable.GetValue(email);
+            Driver.FindElement(By.CssSelector("#inputEmail")).SendKeys(_email);
         }
 
         public void IEnterAPasswordPassword(string password) {
-
+            var _pass = Variable.GetValue(password);
+            Driver.FindElement(By.CssSelector("#inputPassword")).SendKeys(_pass);
         }
 
         public void IShouldSeeTheUserFullNameIsFullname(string fullname) {

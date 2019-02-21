@@ -19,4 +19,10 @@
     <PackageReference Include="Selenium.WebDriverBackedSelenium" Version="3.141.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="variables.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
